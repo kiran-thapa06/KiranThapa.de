@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:10%;
+    background-color: #333;
+    overflow: hidden;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    padding: 10px;
+   
+  }
+        .intro-container {
+  display: flex; /* Align items side by side */
+  align-items: center; /* Vertically align the content */
+  justify-content: flex-start; /* Align content to the left */
+  flex-direction: row-reverse;
+  padding: 30px;
+  gap: 20px; /* Space between text and image */
+  flex-wrap: wrap; /* Allows responsive layout if the screen is small */
+}
+
+/* Image container */
+.image-container {
+  flex: 0 0 250px; /* Set a fixed size for the image */
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%; /* Make image responsive */
+
+  height: 300px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Make the image circular */
+  object-fit: cover; /* Ensure it looks good inside the circle */
+}
+
+/* Text container */
+.text-container {
+  flex: 1; /* Allow the text container to take available space */
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px; /* Adjust the font size */
+  line-height: 1.6; /* Line spacing for readability */
+  color: #333; /* Text color */
+  max-width: 600px; /* Limit text container width */
+  text-align: justify;
+  padding:10px;
+}
+
+/* Optional: Apply a background image */
+body {
+  background-image: url('path-to-your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+        footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .icon {
+  width: 24px; /* Set the desired width */
+  height: 24px; /* Set the desired height */
+  margin: 0 5px; /* Add some spacing between icons */
+  transition: transform 0.3s ease;
+}
+.icon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  .backtotop {
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Set font size */
+ display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.backtotop:hover {
+  transform: scale(1.5); /* Slightly zoom the text */
+}
+
+
+
+        </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT ME</a>
+<a href="education.html">EDUCATION</a>
+<a href="experience.html">EXPERIENCE</a>
+<a href="video.html">MY VLOGS</a>
+
+<a href="photographs.html">PHOTOGRAPHS</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+    <div class="intro-container">
+        <div class="image-container">
+          <img src="./images/myimage.JPG" alt="Kiran Thapa" class="profile-image" />
+        </div>
+        <div class="text-container">
+          <p>Hello, my name is<strong> Kiran Thapa</strong>, and I am from Nepal. I am currently pursuing my bachelor's degree at <a href="https://www.haw-hamburg.de/en/" target="_blank">Hamburg University of Applied Sciences (HAW)</a>.
+             I am a passionate full-stack developer with a growing interest in this field.
+             Over time, my fascination with web design and development has deepened as I explore various web pages and layouts. 
+            I often find myself envisioning how I can enhance and refine these designs. 
+            While I am continually learning and improving my skills, I am excited about the journey of growth and innovation that this field offers.</p>
+        </div>
+      </div>
+      
+    <footer>
+        <p>&copy; 2024 Kiran Thapa Portfolio</p>
+        <div class="footer-content">
+          <p>Join me </p>
+          <a href="https://www.instagram.com/https://www.instagram.com/kiran_thapa.me/" target="_blank">
+              <img src="./images/instagram-icon.PNG" alt="Instagram" class="icon" />
+            </a>
+            <a href="https://www.youtube.com/@kiran_Rojika" target="_blank">
+              <img src="./images/youtube-icon.PNG" alt="YouTube" class="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/kiran-thapa-342a60265/" target="_blank">
+              <img src="./images/linkedin-icon.PNG" alt="LinkedIn" class="icon" />
+            </a>
+          </div>
+        <a href="#top"class="backtotop">Back to Top</a>
+    </footer>
+</body>
+</html>

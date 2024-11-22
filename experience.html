@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10%;
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 24px; /* Set the desired width */
+            height: 24px; /* Set the desired height */
+            margin: 0 5px; /* Add some spacing between icons */
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2); /* Slightly enlarge on hover */
+        }
+
+        .backtotop {
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Set font size */
+            display: inline-block;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+
+        .backtotop:hover {
+            transform: scale(1.5); /* Slightly zoom the text */
+        }
+        .experience-section {
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #f0f0f0;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        .experience-section h2 {
+            text-align: center;
+            color: navy;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .experience-section .item {
+            margin-bottom: 20px;
+        }
+
+        .experience-section .item h3 {
+            color: navy;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .experience-section .item p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .experience-section .highlight {
+            font-weight: bold;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="video.html">MY VLOGS</a>
+        <a href="photographs.html">PHOTOGRAPHS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <main>
+        <!-- Experience Section -->
+        <div class="experience-section">
+            <h2>Experience</h2>
+
+            <div class="item">
+                <h3>Instructor</h3>
+                <p><span class="highlight">Galaxy Computer Institute, Nepal | 2016</span><br>
+                Taught essential computer skills, including MS Word, Excel, and PowerPoint, to students of varying proficiency levels.<br>
+                This role not only enhanced my technical expertise but also significantly boosted my confidence and refined my communication and teaching abilities.</p>
+            </div>
+
+            <div class="item">
+                <h3>Technical and Vocational Training</h3>
+                <p><span class="highlight">Computer Engineering Technician</span><br>
+                National Examination Board, Nepal | 2017<br>
+                Completed a 10-credit hour on-the-job training program, equivalent to 1200 clock hours. Achieved a strong academic record with an 85% score.</p>
+            </div>
+
+            <div class="item">
+                <h3>Media and Creative Arts</h3>
+                <p><span class="highlight">Photography and Videography Specialist</span> | 2018<br>
+                Underwent a comprehensive one-year training program focusing on:<br>
+                - Camera operation and techniques<br>
+                - Video editing using Adobe Premiere Pro and Wondershare Filmora<br>
+                - Photo editing and post-production skills</p>
+            </div>
+
+            <div class="item">
+                <h3>Professional Experience</h3>
+                <p><span class="highlight">Music Video Production</span> | 2018-Present<br>
+                Contributed to over 50 music videos in roles such as:<br>
+                - Director<br>
+                - Scriptwriter<br>
+                - Choreographer<br>
+                - Videographer</p>
+
+                <p><span class="highlight">Editorial Photography</span> | 2020<br>
+                Captured photographs for the prestigious Paris MOEVIR magazine, featuring Miss Globe Germany 2020.</p>
+
+                <p><span class="highlight">Dance Instructor</span> | 2018-2020<br>
+                Taught dance at the Tanahun Rising Star Dance School, imparting skills and passion to aspiring dancers.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kiran Thapa Portfolio</p>
+        <p>Language: English, Nepali, Hindi, Deutsch</p>
+        <div class="footer-content">
+            <p>Join me</p>
+            <a href="https://www.instagram.com/kiran_thapa.me/" target="_blank">
+                <img src="./images/instagram-icon.PNG" alt="Instagram" class="icon" />
+            </a>
+            <a href="https://www.youtube.com/@kiran_Rojika" target="_blank">
+                <img src="./images/youtube-icon.PNG" alt="YouTube" class="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/kiran-thapa-342a60265/" target="_blank">
+                <img src="./images/linkedin-icon.PNG" alt="LinkedIn" class="icon" />
+            </a>
+        </div>
+        <a href="#top" class="backtotop">Back to Top</a>
+      
+    </footer>
+</body>
+</html>

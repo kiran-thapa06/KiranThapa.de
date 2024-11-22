@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Qualifications</title>
+    <style>
+      nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:10%;
+    background-color: #333;
+    overflow: hidden;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  nav a {
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    padding: 10px;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .academic-qualifications {
+            margin: 20px auto;
+            padding: 0 20px;
+            max-width: 800px;
+        }
+
+        .academic-qualifications h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .academic-qualifications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .academic-qualifications li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .academic-qualifications li:nth-child(odd) {
+            flex-direction: row-reverse; /* Alternate layout for odd items */
+        }
+
+        .qualification-image {
+            width: 500px; /* Medium-sized images */
+            height: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .qualification-text {
+            flex: 1; /* Text container will take up remaining space */
+            max-width: 60%; /* Prevent it from stretching too far */
+            padding: 5px;
+            text-align: left;
+        }
+
+        .academic-qualifications li:nth-child(odd) .qualification-text {
+            text-align: right; /* Align text right for odd items */
+        }
+
+        .academic-qualifications li:last-child {
+            display: flex; /* Ensure the layout uses flexbox */
+            flex-direction: row; /* Ensure image comes to the left */
+            align-items: center;
+            justify-content: space-between; /* Space between text and image */
+        }
+
+        .academic-qualifications li:last-child .qualification-image {
+            margin-right: 20px; /* Add spacing between image and text */
+        }
+
+        .academic-qualifications li:last-child .qualification-text {
+            text-align: left; /* Ensure the text is aligned properly */
+        }
+
+        /* Highlight for dates */
+        .highlight {
+            background-color: yellow;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 24px; /* Set the desired width */
+            height: 24px; /* Set the desired height */
+            margin: 0 5px; /* Add some spacing between icons */
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2); /* Slightly enlarge on hover */
+        }
+
+        .backtotop {
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Set font size */
+            display: inline-block;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+
+        .backtotop:hover {
+            transform: scale(1.5); /* Slightly zoom the text */
+        }
+    </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT ME</a>
+<a href="education.html">EDUCATION</a>
+<a href="experience.html">EXPERIENCE</a>
+<a href="video.html">MY VLOGS</a>
+
+<a href="photographs.html">PHOTOGRAPHS</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+    <section class="academic-qualifications">
+        <h2>Academic Qualifications</h2>
+        <ul>
+            <li>
+                <div class="qualification-text">
+                    <strong><span class="highlight">2021 - Present</span></strong>
+                    <p><a href="https://www.haw-hamburg.de/en/" target="_blank">Hamburg University of Applied Sciences (HAW)</a></p>
+                    <p>Pursuing a Bachelor's degree in Information and Electrical Engineering</p>
+                </div>
+                <img src="./images/haw.jpg" alt="HAW Logo" class="qualification-image">
+            </li>
+            <li>
+                <div class="qualification-text">
+                    <strong><span class="highlight">2020</span></strong>
+                    <p><a href="https://tu.edu.np/" target="_blank">TU Board, Aadikavi Bhanubhakta Campus</a></p>
+                    <p>Pursued Information and Communication Technology Education</p>
+                    <p>Achieved a GPA of 3.20 in the first semester and 3.25 in the second.</p>
+                </div>
+                <img src="./images/tu.jpg" alt="TU Board Logo" class="qualification-image">
+            </li>
+            <li>
+                <img src="./images/shss.jpg" alt="School Logo" class="qualification-image">
+                <div class="qualification-text">
+                    <strong><span class="highlight">2015</span></strong>
+                    <p><a href="https://satyawati.edu.np/" target="_blank">Satyawati Higher Secondary School</a></p>
+                    <p>I completed up to Grade 10 from Satyawati Higher Secondary School</p>
+                    <p>Achieved a GPA of 3.56.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Kiran Thapa Portfolio</p>
+        <p>Language: English, Nepali, Hindi, Deutsch</p>
+        <div class="footer-content">
+            <p>Join me</p>
+            <a href="https://www.instagram.com/kiran_thapa.me/" target="_blank">
+                <img src="./images/instagram-icon.PNG" alt="Instagram" class="icon" />
+            </a>
+            <a href="https://www.youtube.com/@kiran_Rojika" target="_blank">
+                <img src="./images/youtube-icon.PNG" alt="YouTube" class="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/kiran-thapa-342a60265/" target="_blank">
+                <img src="./images/linkedin-icon.PNG" alt="LinkedIn" class="icon" />
+            </a>
+        </div>
+        <a href="#top" class="backtotop">Back to Top</a>
+    </footer>
+</body>
+</html>

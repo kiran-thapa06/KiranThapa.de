@@ -1,0 +1,71 @@
+html{
+    background-color:white;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:10%;
+    background-color: #333;
+    overflow: hidden;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0px;
+  }
+  
+  nav a {
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    padding: 10px;
+  }
+  /* Style for the image container */
+.image-container {
+    display: flex;              /* Enables flexbox for centering */
+    justify-content: center;    /* Horizontally centers content */
+    align-items: center;
+    height: calc(100vh - 10px);        /* Vertically centers content */
+  
+    margin: 0px;                  /* Removes default margin */
+}
+
+/* Style for the image */
+.image-container img {
+    
+    max-width: 100%;            /* Ensures the image scales with screen width */
+    height: auto;               /* Maintains aspect ratio while scaling */
+    object-fit: contain;        /* Ensures the image fits within its container */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 75px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .icon {
+    width: 20px; /* Reduced size */
+    height: 20px; /* Reduced size */
+    transition: transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
+  .backtotop {
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Set font size */
+   display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  .backtotop:hover {
+    transform: scale(1.5); /* Slightly zoom the text */
+  }
